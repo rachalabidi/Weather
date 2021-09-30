@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="favo.css">
+    
+    <title>weather | fav</title>
+</head>
+<body>
+  <div class="containernnav">
+    <nav class="header__nav nav-bar">
+      
+        <div class="toggle-menu">
+          <img src="./icons/Icon metro-weather.png">
+          
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="./index.html" target="_self"><img src="./icons/Icon awesome-home.png"></a></li>
+          <li class="nav-list-item"> <a href="./siteweather.html"><img src="./icons/Icon material-watch-later.png"></a></li>
+          <li class="nav-list-item">
+            <a href ="articles.html" target="_self"><img src="./icons/Icon open-spreadsheet.png"> </a>
+          </li>
+          <li class="nav-list-item"><a href="./favo.html"><img src="./icons/Icon material-favorite.png"></a></li>
+          <li class="nav-list-item">
+            <a href="./Team.html"><img src="./icons/Icon open-people.png"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+        <p class="app-title">favorite places </p>
+    <div class="container">
+      <input
+      id="search"
+      type="text"
+      class="addtxt" 
+      placeholder="Add ur favorite location"
+      autocomplete="off"/>
+		<button class="addBtn" onclick="addElement()">
+			<img src="./img/plus.png">
+		</button>
+		<div class="list">
+        </div>
+		</div>
+</body>
+<script src="favo.js"></script>
+
+
+
+</html>

@@ -1,0 +1,253 @@
+.app-title  {
+	text-align: center;
+	padding: 5px;
+	margin: 35px 400px;
+	font-size:  2.5em;
+	color: #020202;
+	background-color: #80dfff91;
+   
+  
+  }
+
+.container{
+	position: absolute;
+	height: 25pc;
+	width: 20pc;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 55px black;
+}
+.addtxt{
+	position: absolute;
+	height: 5px;
+	width: 90%;
+	margin: auto;
+	top: 25px;
+	right: 0;
+	left: 0;
+	outline: none;
+	border: none;
+	padding: 20px;
+	padding-right: 50px;
+}
+.addBtn{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	top: 23px;
+	right: 15px;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	border: 0;
+}
+.addBtn img{
+	position: absolute;
+	height: 40px;
+	width: auto;
+	margin: auto;
+	top: 10px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+}
+.list{
+	position: absolute;
+	height: 75%;
+	width: 100%;
+	margin: auto;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y:  scroll;
+	overflow-x: hidden;
+}
+.list::-webkit-scrollbar{
+	-webkit-appearance: none;
+	appearance: none;
+}
+.element{
+	position: relative;
+	height: fit-content;
+	width: 70%;
+	right: 0;
+	text-align: left;
+	transition: 0.2s;
+	padding: 10px;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	/* padding-right: 70px; */
+	word-wrap: break-word;
+	font-family:  -apple-system, blinkmacsystemfont, "segoe UI", roboto, oxygen, ubuntu, cantarell, "open sans", "Helvetica Neue", sans-serif;
+}
+/* .tick{
+	position: absolute;
+	margin: auto;
+	height: 20px;
+	top: 0;
+	bottom: 0;
+	right: 50px;
+} */
+.dustbin{
+	position: absolute;
+	margin: auto;
+	height: 30px;
+	top: 0;
+	bottom: 0;
+	right: 10px; 
+	filter: greyscale(1);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Habibi', serif;
+   overflow: hidden;   /*Hide scrollbars */
+  
+}
+body {
+background: url("./img/b.jpg");
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+}
+
+.containernav {
+	width: 100%;
+	height: 100vh;
+	background: #000428;
+	background: -webkit-linear-gradient(to right, #004e92, #000428);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #004e92, #000428);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background-size: 400% 400%;
+	position: relative;
+}
+
+.nav-bar {
+	position: absolute;
+	background-color: #80dfff91;
+	top: 0;
+	right: 100%;
+	height: 100vh;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: position 2.9s;
+	-webkit-transition: position 2.9s;
+	-moz-transition: position 2.9s;
+	-ms-transition: position 2.9s;
+	-o-transition: position 2.9s;
+}
+a 
+{
+display:block;
+text-align: center;
+cursor: pointer;
+ margin: 0px;
+padding: 0px; 
+}
+ a img{
+width: 25px;
+}
+
+.toggle {
+	left: 0;
+	box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.toggle-menu {
+	
+	position: fixed;
+	top: 45px;
+	left: 450px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  padding: 2px 2px 2px 1px;
+	cursor: pointer;
+	
+}
+
+
+.toggle .toggle-menu {
+ opacity: 0.2;
+  
+}
+
+.nav-list {
+	list-style: none;
+  
+}
+
+.nav-list-item {
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.app-title  {
+		text-align: center; 
+	   margin: 5px 20px;
+	   font-size:  2.5em;
+	   padding: 5px;
+	   margin: 35px auto;
+	   color: #020202;
+	   background-color: #80dfff91;
+	   
+	 }
+	   .toggle-menu {
+		 
+		 position: fixed;
+		 top: 35px;
+		 left: 25px;
+		 width: 40px;
+		 height: 40px;
+	 
+	   }
+	   .container{
+		margin: 150px auto;
+	
+	}
+}
+
+@media (max-width: 767px) {
+
+  
+  .app-title  {
+	 text-align: center; 
+	margin: 5px 20px;
+	font-size:  1.5em;
+	padding: 5px;
+	margin: 35px auto;
+	color: #020202;
+	background-color: #80dfff91;
+	
+  }
+	.toggle-menu {
+	  
+	  position: fixed;
+	  top: 35px;
+	  left: 25px;
+	  width: 40px;
+	  height: 40px;
+	}
+	.container{
+		margin: 150px auto;
+	
+	}
+	
+}

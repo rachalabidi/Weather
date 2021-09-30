@@ -1,0 +1,193 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Habibi', serif;
+  
+ 
+}
+
+
+
+body
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   background: #ffffff;
+}
+
+.section-title{
+ text-align: center;
+ padding-bottom: 30px;
+ position: relative;
+}
+
+.titlet h1{
+   text-align: center;
+   color: #005799;
+   font-size: 45px;
+
+}
+.container1
+{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container
+{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container .card{
+   width: 330px;
+   height: 416px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #f2f3f7;
+   box-shadow: 0.6em 0.6em 1.2em #bff0ff,
+               -0.5em -0.5em 1em #80e0ff;
+   border-radius: 20px;
+}
+.container .card .content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container .card .content .imgBx
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+.container .card .content .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.container .card .content .contentBx h4{
+   color: #005799;
+   font-size: 1.7rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.container .card .content .contentBx h5
+{
+   color: #00516b;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+.container .card .content .sci {
+   margin-top: 20px;
+}
+.container .card .content .sci a
+{
+   text-decoration: none;
+   color: #80e0ff;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+.container .card .content .sci a:hover
+{
+   color: #bff0ff;
+}
+
+.containernav {
+   width: 100%;
+   height: 100vh;
+   background: #000428;
+   background: -webkit-linear-gradient(to right, #004e92, #000428);
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #004e92, #000428);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+   background-size: 400% 400%;
+   position: relative;
+ }
+ 
+ .nav-bar {
+   position: absolute;
+   background-color: #80dfff91;
+   top: 0;
+   right: 100%;
+   height: 100vh;
+   width: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: position 2.9s;
+   -webkit-transition: position 2.9s;
+   -moz-transition: position 2.9s;
+   -ms-transition: position 2.9s;
+   -o-transition: position 2.9s;
+ }
+ .nav-bar a 
+ {
+ display:block;
+ text-align: center;
+ cursor: pointer;
+ margin: 0px;
+ padding: 0px; 
+ }
+ .nav-bar a img{
+ width: 25px;
+ }
+ 
+ .toggle {
+   left: 0;
+   box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+ 
+ }
+ 
+ .toggle-menu {
+   
+   position: fixed;
+   top: 5px;
+   left: 80px;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+  padding: 2px 2px 2px 1px;
+   cursor: pointer;
+   
+ }
+ 
+ 
+ .toggle .toggle-menu {
+ opacity: 0.2;
+  
+ }
+ 
+ .nav-list {
+   list-style: none;
+  
+ }
+ 
+ .nav-list-item {
+   text-align: center;
+   padding: 10px 0;
+ }

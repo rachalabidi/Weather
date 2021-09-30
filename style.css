@@ -202,7 +202,7 @@ body{
 }
 .containernav {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: #000428;
 	background: -webkit-linear-gradient(to right, #004e92, #000428);
 	/* Chrome 10-25, Safari 5.1-6 */
@@ -247,15 +247,15 @@ width: 25px;
 }
 
 .toggle-menu {
-	position: fixed;
-	top: 20px;
-	left: 175px;
+	position: absolute;
+	top: 30px;
+	left: 60px;
 	width: 50px;
 	height: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-  padding: 2px 2px 2px 1px;
+     padding: 2px 2px 2px 1px;
 	cursor: pointer;
 	
 }
@@ -275,7 +275,15 @@ width: 25px;
 	text-align: center;
 	padding: 10px 0;
 }
-@media(max-width: 1000px){
+@media(max-width: 1024px){
+	html{
+		overflow-x: hidden;
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		margin:100px auto ;
+	}
 	.container .card.active{
 	    position: relative;
 	    width:400px;
@@ -299,6 +307,9 @@ width: 25px;
          }
 } 
 @media(max-width: 767px){
+	html{
+		overflow-x: hidden;
+	}
 	.container .card.active{
 	    width:400px;
 	}
@@ -319,8 +330,13 @@ width: 25px;
 	      padding-top:20px;
 	      padding-bottom: 25px;
     }
+	.container{
+		display: flex;
+		flex-direction: column;
+		margin:100px auto ;
+	}
 }
-@media(max-width: 1124px){
+/* @media(max-width: 1124px){
 	.container .card{
         margin: 70px;
 	}
@@ -345,7 +361,7 @@ width: 25px;
 	      padding-top:20px;
 	      padding-bottom: 25px;
     }
-}
+} */
 
 
 
